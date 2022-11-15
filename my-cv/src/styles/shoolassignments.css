@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+#team{
+    height: 100vh;
+      display: flex;
+     margin: 0,auto;
+     justify-content: center;
+    align-items: center;   
+    place-items: center;
+}
+
+.team-title{
+    font-weight: 500 medium ;
+    font-size: 28px;
+    color: #22b3cc;
+    padding: 0.5rem; 
+    text-align: center;
+    margin-top: 2rem;
+  
+  }
+
+.team-heading{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    padding: 1rem
+    }
+  
+  .team-text{
+    font-weight: 400, regular;
+    text-align: center;
+    color: #858B95;
+    font-size: 16 px;
+   margin-bottom: 1rem;
+  }
+
+
+  .container-team{
+    margin: auto;
+   width: 60%;
+   background-color: beige;
+    
+  }
+.row-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     margin-top: 5rem; 
+     padding: 4rem;
+  }
+
+.profile-card{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px rgb(245, 236, 236);
+    transition: .6s;
+    margin: 0 25px;
+}
+
+.profile-card:hover{
+    border-radius:  10px;
+    height: 130px;
+    margin-bottom: 2rem;
+}
+.profile-card .img{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    transition: .6s;
+    z-index: 99;
+     cursor: pointer; 
+
+}
+.img img{
+    width: 100%;
+     height:100%; 
+    border-radius: 30%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+.profile-card:hover .img{
+    transform: translateY(-60px);
+}
+.profile-card:hover img{
+   border-radius: 10px;
+}
+.caption {
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile-card:hover .caption{
+    opacity: 1;
+    padding: 1rem;
+}
+.caption h3{
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* color: #001D37; */
+    padding: 1rem;
+
+}
+
+.caption p {
+    font-size: 15px;
+    margin: 2px 0 9px 0;
+
+}
+    /* projects */
+    @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.container-projects {
+  display: flex;
+  /* width: 1040px; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: black;
+  
+}
+.card {
+  margin: 10px;
+  background-color: rgb(231, 228, 228);
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  height: 80px;
+  
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tag-teal {
+  background-color: grey;
+}
+.tag-purple {
+  background-color: #5e76bf;
+}
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+.user {
+  display: flex;
+  margin-top: auto;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.user-info h5 {
+  margin: 0;
+}
+.user-info small {
+  color: #545d7a;
+}
+
+
+@media screen and (max-width: 992px) {
+  #team {
+    height: 100%;
+    width: 100%;
+     
+  }
+  .container-team{
+    margin: auto;
+   width: 100%;
+    
+  }
+  .container-projects {
+    margin: auto;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    height: 80px;
+   
+  }
+
+  .column {
+    width: 50%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+    align-items: center;
+  }
+  .row-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; 
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+  #team {
+    height: 100%;
+    width: 100%;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+    align-items: center;
+  }
+  .row-team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  
+}

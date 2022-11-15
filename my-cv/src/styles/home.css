@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    
+  }
+  
+  .student-img{
+    height: auto;
+    width: 60%; 
+  }
+  .text-blu{
+    color: rgb(28, 200, 212);
+    padding: 1rem;
+  }
+ 
+  
+   
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+    /* body {
+      background-color: blue;
+    } */
+    .student-img{
+        height: auto;
+        width: 40%;
+    } 
+    
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    
+  }

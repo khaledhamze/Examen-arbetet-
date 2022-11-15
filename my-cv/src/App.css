@@ -1,0 +1,143 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ body {
+  height: 100vh;
+  background-color: black;
+  color:lightyellow
+
+ }
+ .container {
+  width: 80%;
+  margin: 0 auto;
+}
+.container-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+  margin-top: 8rem;
+}
+.container-home  {
+  /* height: 100vh; */
+  height: 100%;
+  margin: auto;
+  width: 100%
+}
+.right-side {
+  width: 50%;
+  margin-left: 0.5rem;
+}
+
+.tittle {
+  font-weight: 500;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+   padding: 1rem;
+ }
+ .btn-contact {
+  border: 1px solid #FFC100; 
+  width: 190.5px;
+  height: 52px;
+  box-shadow: 0px 22px 51px #FFEDCB;
+  /* width: 149.39px;
+  height: 52px; */
+  background: linear-gradient(90deg, #FFC100 4.74%, #FFA600 87.37%);
+   border-radius: 40px;  
+  text-align: center;
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 2rem;
+   }
+ 
+ .btn-contact:hover{
+     
+     border: 1px solid #666666; 
+     background-color: #99e0f0;
+     background: linear-gradient(36.81deg, #a5e5f4 12.87%, rgba(245, 253, 255, 0) 110.88%);
+
+     color : #666666;
+     transform: matrix(1, 0, 0, 1, 0, 0);
+     box-sizing: border-box;
+     filter: drop-shadow(0px 36px 34px rgba(0, 0, 0, 0.08));
+     border-radius: 40px;
+   } 
+   .about{
+    color:  rgb(28, 200, 212);
+    padding: 4rem;
+   } 
+  
+
+
+
+
+
+@media screen and (max-width: 992px) {
+  .container-row{
+    /* background-color: aqua; */
+    display: block;
+  }
+  
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .container-row {
+    /* background-color: brown; */
+    display: block;
+    justify-content: center;
+   align-items: center;
+   flex-direction: column
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  
+}
+
+
+ 

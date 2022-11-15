@@ -1,0 +1,24 @@
+/* .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+    
+
+} */
+.header .nav-item {
+    padding: 1rem;
+    font-weight: 500;
+    list-style-type: none;
+    text-decoration-line: none;
+    
+}
+.header .nav-item a:hover {
+    padding-bottom: 10px;
+   border-bottom: 3px solid #0b2096;
+   color: #0b2096;
+  
+}
